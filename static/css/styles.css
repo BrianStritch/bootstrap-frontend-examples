@@ -11493,7 +11493,7 @@ p {
 
 /* custom styles */
 
-#header-logo{
+#header-logo, .nannys-logo{
   width: 75px;
   height: auto;
 }
