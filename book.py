@@ -1,4 +1,4 @@
-from run import max_guests
+from run import max_guests, booking
 
 # create the class template basically
 
@@ -40,7 +40,6 @@ class Car:
 
 darcy = Person(6, '2kg', '3.6ft', 'Darcy', 'Stritch', 'Blonde')
 
-
 silvia = Car('nissan', 'silvia', 'petrol', '1.8', '86l445')
 
 print(darcy.first_name)
@@ -48,3 +47,23 @@ darcy.singing()
 
 print(darcy.first_name)
 silvia.driving()
+
+def start():
+    user = input('what is your name:')
+    guests(user)
+
+
+def guests(user):
+    print(f"hi {user}, the max number of guests is {max_guests}")
+    age = darcy.age
+    print(f"{user}'s age =",age)
+    book_now = input('do you want to make a booking y/n: ')
+    if book_now.upper() == "Y":
+        if darcy.first_name.upper() == user.upper():
+            booking()
+        else:
+            print('its not darcy')
+    else:
+        print(f"ok {user}, thanks anyway")
+
+start()

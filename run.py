@@ -43,11 +43,9 @@ def remaining_tables(remaining_seats):
     available_tables =  math.floor(remaining_seats / 6)    
     print('new available tables = ', available_tables)
     if available_tables > 1:
-        print('in while loop return true')
         availability = True
         print('date today =', datetime.now())
-    else:
-        print('in while loop return false')
+    else:        
         availability = False
 
 
