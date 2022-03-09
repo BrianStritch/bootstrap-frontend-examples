@@ -67,3 +67,5 @@ def guests(user):
         print(f"ok {user}, thanks anyway")
 
 start()
+
+# to run this file type python3 book.py into the terminal
