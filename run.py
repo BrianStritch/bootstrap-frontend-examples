@@ -43,8 +43,7 @@ def remaining_tables(remaining_seats):
     available_tables =  math.floor(remaining_seats / 6)    
     print('new available tables = ', available_tables)
     if available_tables > 1:
-        availability = True
-        print('date today =', datetime.now())
+        availability = True        
     else:        
         availability = False
 
@@ -68,5 +67,5 @@ def main():
     booking()
     
 
-#main()
+main()
 
